@@ -1,0 +1,11 @@
+# 复制此文件到 ~/.restart_platform/config.yaml 并按需修改
+
+# 可选：预填默认值，节省每次输入
+default_host: 10.0.1.5
+default_user: ops
+
+steps:
+  normandy:
+    script: /data/app/normandy-5101/bin/normandy_restart.sh
+  sentinel:
+    workdir: /data/workspace/nova-omp-sentinel
